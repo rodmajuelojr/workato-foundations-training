@@ -235,28 +235,33 @@
           aria-labelledby="tab-build"
           hidden
         >
-          <p class="kicker">Why these four accounts</p>
-          <h2 class="panel__title">Your two flows for the day</h2>
+          <p class="kicker">What you'll build</p>
+          <h2 class="panel__title">Two recipes, no code required</h2>
           <p class="panel__sub">
-            The session covers two connected workflows across Gmail, Xero, and
-            Salesforce. The exercises will be built during the session.
+            You'll build both recipes end-to-end during the session — connecting
+            Salesforce, Xero, and Gmail without writing a line of code.
           </p>
 
           <div class="legs">
             <div class="leg">
-              <span class="leg__tag">Accounts Payable</span>
+              <span class="leg__tag"
+                >Accounts Receivable · Deal-to-Invoice</span
+              >
               <ol class="leg__steps">
-                <li>An invoice is received in Gmail</li>
-                <li>Invoice data is processed in Xero</li>
-                <li>The vendor record is created or verified</li>
+                <li>A deal is marked Closed Won in Salesforce</li>
+                <li>Workato creates a matching draft invoice in Xero</li>
+                <li>
+                  Finance reviews the draft — nothing sends to the customer
+                  automatically
+                </li>
               </ol>
             </div>
             <div class="leg">
-              <span class="leg__tag">Accounts Receivable</span>
+              <span class="leg__tag">Accounts Payable · Inbox-to-Approval</span>
               <ol class="leg__steps">
-                <li>An invoice is created in Xero</li>
-                <li>he customer or opportunity is verified in Salesforce</li>
-                <li>The relevant record is updated</li>
+                <li>A vendor invoice email lands in Gmail</li>
+                <li>Workato creates a bill in Xero, awaiting approval</li>
+                <li>A Salesforce task is created to route it for approval</li>
               </ol>
             </div>
           </div>
