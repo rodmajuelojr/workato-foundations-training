@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workato Foundations — Setup Guide</title>
+    <meta
+      name="description"
+      content="Pre-requisites and setup checklist for the Aretex × Workato Foundations hands-on training."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ============ HERO ============ -->
+    <header class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow">Workato · Aretex</p>
+        <h1 class="hero__title">Workato Foundations</h1>
+        <p class="hero__sub">
+          <strong>Complete the required account setup before the session to ensure you can participate in all exercises.
+        </p>
+        <p class="hero__badge">
+          No prior technical experience is required.
+        </p>
+      </div>
+    </header>
+
+    <!-- ============ TABS ============ -->
+    <div class="panel">
+      <div class="tabs" role="tablist" aria-label="Setup guide sections">
+        <button
+          class="tab"
+          role="tab"
+          id="tab-prereqs"
+          aria-controls="panel-prereqs"
+          aria-selected="true"
+        >
+          Pre-requisites
+        </button>
+        <button
+          class="tab"
+          role="tab"
+          id="tab-checklist"
+          aria-controls="panel-checklist"
+          aria-selected="false"
+        >
+          Access Verification
+        </button>
+        <button
+          class="tab"
+          role="tab"
+          id="tab-build"
+          aria-controls="panel-build"
+          aria-selected="false"
+        >
+          What You'll Build
+        </button>
+        <button
+          class="tab"
+          role="tab"
+          id="tab-faq"
+          aria-controls="panel-faq"
+          aria-selected="false"
+        >
+          FAQ &amp; Support
+        </button>
+      </div>
+
+      <div class="panel__body">
+        <!-- ============ PREREQUISITES ============ -->
+        <section
+          class="tabpanel"
+          role="tabpanel"
+          id="panel-prereqs"
+          aria-labelledby="tab-prereqs"
+        >
+          <p class="kicker">Before you arrive</p>
+          <h2 class="panel__title">Required Accounts</h2>
+          <p class="panel__sub">
+            Create and verify access to each account before attending the session.
+          </p>
+
+          <ol class="list">
+            <li class="row">
+              <span class="row__num">1</span>
+              <div class="row__body">
+                <h3 class="row__title">Workato Sandbox</h3>
+                <p class="row__desc">
+                  Automation Platform - Your training workspace for building and testing your automations.
+                </p>
+                <div class="chips">
+                  <a
+                    class="chip"
+                    href="https://app.trial.workato.com"
+                    target="_blank"
+                    rel="noopener"
+                    >app.trial.workato.com <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li class="row">
+              <span class="row__num">2</span>
+              <div class="row__body">
+                <h3 class="row__title">Xero</h3>
+                <p class="row__desc">
+                  Accounting software - used for invoice-related exercises.
+                </p>
+                <div class="chips">
+                  <a
+                    class="chip"
+                    href="https://www.xero.com/ph/signup/developers/"
+                    target="_blank"
+                    rel="noopener"
+                    >xero.com/ph/signup/developers
+                    <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li class="row">
+              <span class="row__num">3</span>
+              <div class="row__body">
+                <h3 class="row__title">Gmail</h3>
+                <p class="row__desc">
+                  The inbox used by the Accounts Payable exercise to receive invoice emails. Create your personal Gmail account if you don't have one yet.
+                </p>
+                <div class="chips">
+                  <a
+                    class="chip"
+                    href="https://accounts.google.com/"
+                    target="_blank"
+                    rel="noopener"
+                    >accounts.google.com <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li class="row">
+              <span class="row__num">4</span>
+              <div class="row__body">
+                <h3 class="row__title">Salesforce Developer Sandbox</h3>
+                <p class="row__desc">
+                  CRM used for customer and vendor verification exercises. Create your developer account.
+                </p>
+                <div class="chips">
+                  <a
+                    class="chip"
+                    href="https://www.salesforce.com/products/free-trial/developer/"
+                    target="_blank"
+                    rel="noopener"
+                    >salesforce.com/developer
+                    <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- ============ CHECKLIST ============ -->
+        <section
+          class="tabpanel"
+          role="tabpanel"
+          id="panel-checklist"
+          aria-labelledby="tab-checklist"
+          hidden
+        >
+          <p class="kicker">Pre-session check</p>
+          <h2 class="panel__title">Confirm before you close the laptop</h2>
+          <p class="panel__sub" id="progress">0 of 4 checked in</p>
+
+          <div class="list list--form">
+            <label class="check">
+              <input type="checkbox" data-check="workato" />
+              <span class="check__box" aria-hidden="true"></span>
+              <span class="check__text"
+                ><strong>Workato Trial account</strong> — Log in to your personal Workato workspace. On the upper left part of the page, switch to the Aretex Training Workspace.</span
+              >
+            </label>
+            <label class="check">
+              <input type="checkbox" data-check="xero" />
+              <span class="check__box" aria-hidden="true"></span>
+              <span class="check__text"
+                ><strong>Xero</strong> — Log in to Xero and create a company, vendor or an Invoice.
+                loads</span
+              >
+            </label>
+            <label class="check">
+              <input type="checkbox" data-check="gmail" />
+              <span class="check__box" aria-hidden="true"></span>
+              <span class="check__text"
+                ><strong>Gmail</strong> — Log into Gmail and send an email to yourself.
+                prompt</span
+              >
+            </label>
+            <label class="check">
+              <input type="checkbox" data-check="salesforce" />
+              <span class="check__box" aria-hidden="true"></span>
+              <span class="check__text"
+                ><strong>Salesforce</strong> — Log into Salesforce and create a Contact.</span
+              >
+            </label>
+          </div>
+        </section>
+
+        <!-- ============ WHAT YOU'LL BUILD ============ -->
+        <section
+          class="tabpanel"
+          role="tabpanel"
+          id="panel-build"
+          aria-labelledby="tab-build"
+          hidden
+        >
+          <p class="kicker">Why these four accounts</p>
+          <h2 class="panel__title">Your two flows for the day</h2>
+          <p class="panel__sub">
+            The session covers two connected workflows across Gmail, Xero, and Salesforce. The exercises will be built during the session.
+          </p>
+
+          <div class="legs">
+            <div class="leg">
+              <span class="leg__tag">Accounts Payable</span>
+              <ol class="leg__steps">
+                <li>An invoice is received in Gmail</li>
+                <li>Invoice data is processed in Xero</li>
+                <li>The vendor record is created or verified</li>
+              </ol>
+            </div>
+            <div class="leg">
+              <span class="leg__tag">Accounts Receivable</span>
+              <ol class="leg__steps">
+                <li>An invoice is created in Xero</li>
+                <li>he customer or opportunity is verified in Salesforce</li>
+                <li>The relevant record is updated</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ FAQ & SUPPORT ============ -->
+        <section
+          class="tabpanel"
+          role="tabpanel"
+          id="panel-faq"
+          aria-labelledby="tab-faq"
+          hidden
+        >
+          <p class="kicker">Before you ask</p>
+          <h2 class="panel__title">Questions &amp; who to contact</h2>
+
+          <div class="faq">
+            <details class="faq__item">
+              <summary>
+                I signed up for Xero weeks ago — do I need to redo it?
+              </summary>
+              <p>
+                If it's been more than 30 days, yes — demo tenants reset on that
+                cycle. Sign up again a day or two before the session so it's
+                fresh.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>
+                My Salesforce Developer Edition still hasn't shown up
+              </summary>
+              <p>
+                Email verification can take anywhere from a few minutes to a few
+                hours. Sign up at least a day ahead so there's time to spare.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Do I need to install anything?</summary>
+              <p>
+                No installs — everything runs in the browser. A laptop and a
+                stable connection is all you need.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>
+                What if a signup fails the morning of the session?
+              </summary>
+              <p>
+                Reach out before you arrive — see below. We'd rather fix it
+                beforehand than mid-session.
+              </p>
+            </details>
+          </div>
+
+          <p class="panel__sub" style="margin-top: 1.75rem">
+            Contact a trainer if a signup won't cooperate:
+          </p>
+          <div class="chips">
+            <span class="chip chip--static">Rod Majuelo</span>
+            <span class="chip chip--static">Chris Rosales</span>
+            <span class="chip chip--static">Dianne Casida</span>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <p class="footer__left">Aretex × Workato Foundations</p>
+      <p class="footer__center">Prerequisites &amp; Setup Guide</p>
+      <p class="footer__right">Enablement Session</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
